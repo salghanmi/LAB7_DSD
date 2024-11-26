@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Serial_Adder_Top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_Serial_Adder_Top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="147600001fs"></ZoomEndTime>
+      <Cursor1Time time="140000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="127"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Serial_Adder_Top/a">
+      <obj_property name="ElementShortName">a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Serial_Adder_Top/b">
+      <obj_property name="ElementShortName">b[3:0]</obj_property>
+      <obj_property name="ObjectShortName">b[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/cin">
+      <obj_property name="ElementShortName">cin</obj_property>
+      <obj_property name="ObjectShortName">cin</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Serial_Adder_Top/sum">
+      <obj_property name="ElementShortName">sum[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/dut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/dut/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Serial_Adder_Top/dut/a">
+      <obj_property name="ElementShortName">a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Serial_Adder_Top/dut/b">
+      <obj_property name="ElementShortName">b[3:0]</obj_property>
+      <obj_property name="ObjectShortName">b[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/dut/cin">
+      <obj_property name="ElementShortName">cin</obj_property>
+      <obj_property name="ObjectShortName">cin</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Serial_Adder_Top/dut/sum">
+      <obj_property name="ElementShortName">sum[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/dut/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Serial_Adder_Top/dut/a_reg">
+      <obj_property name="ElementShortName">a_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a_reg[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Serial_Adder_Top/dut/b_reg">
+      <obj_property name="ElementShortName">b_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">b_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/dut/carry">
+      <obj_property name="ElementShortName">carry</obj_property>
+      <obj_property name="ObjectShortName">carry</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Serial_Adder_Top/dut/sum_reg">
+      <obj_property name="ElementShortName">sum_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_reg[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Serial_Adder_Top/dut/bit_count">
+      <obj_property name="ElementShortName">bit_count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_count[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/dut/sum_bit">
+      <obj_property name="ElementShortName">sum_bit</obj_property>
+      <obj_property name="ObjectShortName">sum_bit</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Serial_Adder_Top/dut/next_carry">
+      <obj_property name="ElementShortName">next_carry</obj_property>
+      <obj_property name="ObjectShortName">next_carry</obj_property>
+   </wvobject>
+</wave_config>

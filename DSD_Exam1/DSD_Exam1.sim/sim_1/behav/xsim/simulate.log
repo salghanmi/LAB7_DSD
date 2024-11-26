@@ -1,0 +1,3 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$stop called at time : 140 ns : File "/home/it/DSD_Exam1/DSD_Exam1.srcs/sim_1/new/tb_Serial_Adder_Top.sv" Line 73

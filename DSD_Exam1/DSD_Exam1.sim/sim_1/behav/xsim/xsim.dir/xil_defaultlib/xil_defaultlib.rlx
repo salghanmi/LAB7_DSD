@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/DSD_Exam1/DSD_Exam1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/DSD_Exam1/DSD_Exam1.srcs/sim_1/new/tb_Serial_Adder_Top.sv,1732641245,systemVerilog,,,,tb_Serial_Adder_Top,,,,,,,,
+/home/it/DSD_Exam1/DSD_Exam1.srcs/sources_1/new/SerialAdder.sv,1732640781,systemVerilog,,/home/it/DSD_Exam1/DSD_Exam1.srcs/sim_1/new/tb_Serial_Adder_Top.sv,,FullAdder1;SerialAdder,,,,,,,,

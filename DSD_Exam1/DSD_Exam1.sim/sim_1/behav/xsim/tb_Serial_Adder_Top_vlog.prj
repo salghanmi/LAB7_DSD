@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../DSD_Exam1.srcs/sources_1/new/SerialAdder.sv" \
+"../../../../DSD_Exam1.srcs/sim_1/new/tb_Serial_Adder_Top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
