@@ -1,0 +1,343 @@
+
+*** Running vivado
+    with args -log Digital_LOCK_PARTC_FPGA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Digital_LOCK_PARTC_FPGA.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Digital_LOCK_PARTC_FPGA.tcl -notrace
+Command: synth_design -top Digital_LOCK_PARTC_FPGA -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 269043 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1777.645 ; gain = 155.688 ; free physical = 18748 ; free virtual = 31797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Digital_LOCK_PARTC_FPGA' [/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Digital_LOCK_PARTC_FPGA.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Digital_LOCK_TASK5' [/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Digital_LOCK_TASK5.sv:3]
+	Parameter TIME_10_SEC bound to: 1000000000 - type: integer 
+WARNING: [Synth 8-5788] Register stored_password_reg in module Digital_LOCK_TASK5 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Digital_LOCK_TASK5.sv:66]
+INFO: [Synth 8-6155] done synthesizing module 'Digital_LOCK_TASK5' (1#1) [/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Digital_LOCK_TASK5.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sev_seg_controller' [/home/it/Downloads/task1/src/sev_seg_controller.sv:2]
+	Parameter display_speed bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_decoder' [/home/it/Downloads/task1/src/sev_seg_decoder.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_decoder' (2#1) [/home/it/Downloads/task1/src/sev_seg_decoder.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [/home/it/Downloads/task1/src/decoder.sv:1]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (3#1) [/home/it/Downloads/task1/src/decoder.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'counter_n_bit' [/home/it/Downloads/task1/src/counter_n_bit.sv:1]
+	Parameter n bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_n_bit' (4#1) [/home/it/Downloads/task1/src/counter_n_bit.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'sev_seg_controller' (5#1) [/home/it/Downloads/task1/src/sev_seg_controller.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Digital_LOCK_PARTC_FPGA' (6#1) [/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Digital_LOCK_PARTC_FPGA.sv:23]
+WARNING: [Synth 8-3917] design Digital_LOCK_PARTC_FPGA has port DP driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1832.395 ; gain = 210.438 ; free physical = 18685 ; free virtual = 31735
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1836.363 ; gain = 214.406 ; free physical = 18688 ; free virtual = 31736
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1836.363 ; gain = 214.406 ; free physical = 18688 ; free virtual = 31736
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/it/Downloads/pin-assignment.xdc]
+WARNING: [Vivado 12-507] No nets matched 'BTNC_IBUF'. [/home/it/Downloads/pin-assignment.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/it/Downloads/pin-assignment.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/it/Downloads/pin-assignment.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/it/Downloads/pin-assignment.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Digital_LOCK_PARTC_FPGA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Digital_LOCK_PARTC_FPGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2008.988 ; gain = 0.000 ; free physical = 18687 ; free virtual = 31737
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2008.988 ; gain = 0.000 ; free physical = 18687 ; free virtual = 31737
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18666 ; free virtual = 31715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18666 ; free virtual = 31715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/it/Downloads/pin-assignment.xdc, line 84).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/it/Downloads/pin-assignment.xdc, line 84).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18666 ; free virtual = 31715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Digital_LOCK_TASK5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  Locked |                               11 |                               00
+                Unlocked |                               01 |                               01
+                 Editing |                               00 |                               11
+                  Failed |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'Digital_LOCK_TASK5'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18675 ; free virtual = 31723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Digital_LOCK_PARTC_FPGA 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module Digital_LOCK_TASK5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module counter_n_bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design Digital_LOCK_PARTC_FPGA has port DP driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18671 ; free virtual = 31723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18571 ; free virtual = 31626
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18555 ; free virtual = 31601
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18555 ; free virtual = 31601
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18562 ; free virtual = 31610
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18562 ; free virtual = 31610
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18562 ; free virtual = 31610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18562 ; free virtual = 31610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18562 ; free virtual = 31610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18562 ; free virtual = 31610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    13|
+|3     |LUT1   |     2|
+|4     |LUT2   |     6|
+|5     |LUT3   |    42|
+|6     |LUT4   |     9|
+|7     |LUT5   |     4|
+|8     |LUT6   |    12|
+|9     |FDCE   |    38|
+|10    |FDPE   |     2|
+|11    |FDRE   |    24|
+|12    |IBUF   |     9|
+|13    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+-------------------+------+
+|      |Instance    |Module             |Cells |
++------+------------+-------------------+------+
+|1     |top         |                   |   178|
+|2     |  lock_fsm  |Digital_LOCK_TASK5 |   107|
+|3     |  ssc       |sev_seg_controller |    45|
+|4     |    counter |counter_n_bit      |    45|
++------+------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18562 ; free virtual = 31610
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2008.988 ; gain = 214.406 ; free physical = 18562 ; free virtual = 31610
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2008.988 ; gain = 387.031 ; free physical = 18562 ; free virtual = 31610
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2008.988 ; gain = 0.000 ; free physical = 18568 ; free virtual = 31615
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 4 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2008.988 ; gain = 626.914 ; free physical = 18568 ; free virtual = 31615
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2008.988 ; gain = 0.000 ; free physical = 18568 ; free virtual = 31615
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/it/LAB7_DSD/LAB7_DSD.runs/synth_1/Digital_LOCK_PARTC_FPGA.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Digital_LOCK_PARTC_FPGA_utilization_synth.rpt -pb Digital_LOCK_PARTC_FPGA_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 21:02:05 2024...

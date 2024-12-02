@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec  2 12:18:18 2024
+# Process ID: 187674
+# Current directory: /home/it/LAB7_DSD/LAB7_DSD.runs/impl_1
+# Command line: vivado -log Digital_LOCK_PARTB_FPGA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Digital_LOCK_PARTB_FPGA.tcl -notrace
+# Log file: /home/it/LAB7_DSD/LAB7_DSD.runs/impl_1/Digital_LOCK_PARTB_FPGA.vdi
+# Journal file: /home/it/LAB7_DSD/LAB7_DSD.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Digital_LOCK_PARTB_FPGA.tcl -notrace

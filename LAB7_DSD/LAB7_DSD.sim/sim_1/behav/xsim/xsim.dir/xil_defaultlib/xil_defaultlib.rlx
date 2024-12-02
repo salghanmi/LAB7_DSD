@@ -1,0 +1,20 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/Downloads/task1/src/counter_n_bit.sv,1732455085,systemVerilog,,/home/it/Downloads/task1/src/decoder.sv,,counter_n_bit,,,,,,,,
+/home/it/Downloads/task1/src/decoder.sv,1731076163,systemVerilog,,/home/it/Downloads/task1/src/sev_seg_controller.sv,,decoder,,,,,,,,
+/home/it/Downloads/task1/src/sev_seg_controller.sv,1732447520,systemVerilog,,/home/it/Downloads/task1/src/sev_seg_decoder.sv,,sev_seg_controller,,,,,,,,
+/home/it/Downloads/task1/src/sev_seg_decoder.sv,1731499402,systemVerilog,,/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Digital_LOCK_PARTB_FPGA.sv,,seven_seg_decoder,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sim_1/new/tb_Even_Odd_Detector.sv,1733053486,systemVerilog,,,,tb_Even_Odd_Detector,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sim_1/new/tb_Sequence_Detector.sv,1733050359,systemVerilog,,,,tb_Sequence_Detector,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Digital_LOCK_FPGA.sv,1733060504,systemVerilog,,,,Digital_LOCK_FPGA,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Digital_LOCK_TASK4.sv,1733122950,systemVerilog,,/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/tb_Digital_LOCK_TASK4.sv,,Digital_LOCK_TASK4,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Digital_Lock_Task3.sv,1733061120,systemVerilog,,/home/it/Downloads/task1/src/counter_n_bit.sv,,Digital_Lock_Task3,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Even_Odd_Detector_Task2.sv,1733053424,systemVerilog,,/home/it/LAB7_DSD/LAB7_DSD.srcs/sim_1/new/tb_Even_Odd_Detector.sv,,Even_Odd_Detector_Task2,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/Sequence_Detector_Task1.sv,1733053249,systemVerilog,,/home/it/LAB7_DSD/LAB7_DSD.srcs/sim_1/new/tb_Sequence_Detector.sv,,Sequence_Detector_Task1,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/digital_clock.sv,1733163649,systemVerilog,,/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/tb_digital_clock.sv,,digital_clock,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/tb_Digital_LOCK_TASK4.sv,1733078111,systemVerilog,,,,tb_Digital_LOCK_TASK4,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/tb_Digital_Lock_Task3.sv,1733057413,systemVerilog,,,,tb_Digital_Lock_Task3,,,,,,,,
+/home/it/LAB7_DSD/LAB7_DSD.srcs/sources_1/new/tb_digital_clock.sv,1733163627,systemVerilog,,,,tb_digital_clock,,,,,,,,

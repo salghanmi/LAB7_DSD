@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../LAB7_DSD.srcs/sources_1/new/Digital_Lock_Task3.sv" \
+"../../../../../Downloads/task1/src/counter_n_bit.sv" \
+"../../../../../Downloads/task1/src/decoder.sv" \
+"../../../../../Downloads/task1/src/sev_seg_controller.sv" \
+"../../../../../Downloads/task1/src/sev_seg_decoder.sv" \
+"../../../../LAB7_DSD.srcs/sources_1/new/Digital_LOCK_FPGA.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

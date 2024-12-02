@@ -1,0 +1,4 @@
+Running: xsim.dir/Digital_LOCK_PARTB_FPGA_behav/xsimk -simmode gui -wdb Digital_LOCK_PARTB_FPGA_behav.wdb -simrunnum 0 -socket 46737
+Design successfully loaded
+Design Loading Memory Usage: 33044 KB (Peak: 33592 KB)
+Design Loading CPU Usage: 80 ms
